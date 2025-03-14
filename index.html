@@ -1,0 +1,169 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <title>YouTube Channel Information</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            display: flex;  
+            flex-direction: column;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100%;  
+            margin: 0;  
+            color: white;  
+            position: relative;  
+            transition: background-color 1s ease; /* Smooth background color transition */  
+        }  
+  
+        .header {  
+            text-align: center;  
+            margin-bottom: 40px;  
+        }  
+  
+        h1 {  
+            font-size: 24px;  
+            color: white;  
+            margin: 0;  
+        }  
+  
+        .container {  
+            padding: 20px;  
+            text-align: center;  
+        }  
+  
+        .channels {  
+            display: flex;  
+            flex-wrap: wrap;  
+            justify-content: center;  
+            gap: 20px;  
+        }  
+  
+        .channel {  
+            background-color: #2f3136;  
+            padding: 20px;  
+            border-radius: 10px;  
+            text-align: center;  
+            color: white;  
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+            width: 300px;  
+            margin: 10px;  
+            transition: transform 0.3s ease, box-shadow 0.3s ease;  
+        }  
+  
+        .channel:hover {  
+            transform: scale(1.05);  
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);  
+        }  
+  
+        .channel img {  
+            border-radius: 50%;  
+            width: 80px;  
+            height: 80px;  
+            margin-bottom: 10px;  
+        }  
+  
+        .channel h2 {  
+            font-size: 18px;  
+            margin-bottom: 10px;  
+        }  
+  
+        .channel p {  
+            font-size: 14px;  
+            margin-bottom: 15px;  
+        }  
+  
+        .btn {  
+            background-color: #7289da;  
+            color: white;  
+            padding: 12px 25px;  
+            border-radius: 5px;  
+            text-decoration: none;  
+            font-size: 15px;  
+            transition: all 0.3s ease;  
+        }  
+  
+        .btn:hover {  
+            background-color: #5b6e94;  
+            transform: scale(1.1);  
+        }  
+  
+        .btn:active {  
+            background-color: #4c5f7b;  
+            transform: scale(0.95);  
+        }  
+    </style>  
+</head>  
+  
+<body>  
+  
+    <header class="header">  
+        <h1>YouTube Channel Information</h1>  
+    </header>  
+  
+    <div class="container">  
+        <div class="channels">  
+            <!-- Channel 1 -->  
+            <div class="channel">  
+                <img src="LogoMakerCa-1731753597433.jpg" alt="MrBullKeystare Logo"> <!-- Updated logo for MrBullKeystare -->  
+                <h2>MrBullKeystare</h2>  
+                <p>Subscribers: 49</p> <!-- Manually set the subscriber count -->  
+                <a class="btn" href="https://youtube.com/@mrbullkeystare?si=dwCLIsDS4P4_YXZn" target="_blank">Visit Channel</a>  
+            </div>  
+  
+            <!-- Channel 2 -->  
+            <div class="channel">  
+                <img src="Screenshot_2025-03-10-09-46-02-66_f9ee0578fe1cc94de7482bd41accb329.jpg" alt="TechReviewMaster Logo"> <!-- Replace with actual logo URL -->  
+                <h2>I am pro</h2>  
+                <p>Subscribers: 10k</p> <!-- Manually set the subscriber count -->  
+                <a class="btn" href="https://youtube.com/@animater0.1?si=7lO_XT3DTl6y8sV7" target="_blank">Visit Channel</a>  
+            </div>  
+  
+            <!-- Channel 3 -->  
+            <div class="channel">  
+                <img src="images_7.jpeg" alt="FoodieDelights Logo"> <!-- Replace with actual logo URL -->  
+                <h2>Not Ready</h2>  
+                <p>Subscribers: 57</p> <!-- Manually set the subscriber count -->  
+                <a class="btn" href="https://youtube.com/@not_redy_gamer?si=eFe0TLO3f4f3hkZR" target="_blank">Visit Channel</a>  
+            </div>  
+  
+            <!-- Channel 4 -->  
+            <div class="channel">  
+                <img src="https://via.placeholder.com/80" alt="GamingWithRavi Logo"> <!-- Replace with actual logo URL -->  
+                <h2>GamingWithRavi</h2>  
+                <p>Subscribers: 432,987</p> <!-- Manually set the subscriber count -->  
+                <a class="btn" href="https://www.youtube.com/channel/UCCY2v4p2hD9f4nHGe3Hs3A" target="_blank">Visit Channel</a>  
+            </div>  
+        </div>  
+    </div>  
+  
+    <script>  
+        // Array of background colors  
+        const colors = ["#36393f", "#2f4f4f", "#4B0082", "#FF6347", "#32CD32", "#1E90FF", "#FFD700"];  
+        let currentColorIndex = 0;  
+  
+        // Function to change background color every 5 seconds  
+        function changeBackgroundColor() {  
+            // Set the background color to the next color in the array  
+            document.body.style.backgroundColor = colors[currentColorIndex];  
+  
+            // Increment the index to get the next color  
+            currentColorIndex++;  
+  
+            // If the index exceeds the array length, reset it to 0 (looping colors)  
+            if (currentColorIndex >= colors.length) {  
+                currentColorIndex = 0;  
+            }  
+        }  
+  
+        // Call the function every 5 seconds (5000 milliseconds)  
+        setInterval(changeBackgroundColor, 5000);  
+    </script>  
+  
+</body>  
+  
+</html>
